@@ -1,0 +1,29 @@
+Run Time Analysis (Worst Case Big O Notation)
+
+
+Task0.py
+ - firstTextRecord(texts) = O(1)
+ - lastCallRecord(calls) = O(1)
+Both function's input are only getting a value out of a preset list, an array like data type, causing an excellent run time due to the simplicity. 
+
+
+Task1.py
+ - unique_phone_number_count(texts, calls) = O(n)
+Iteration over a list causes the complexity of this function to increase by n.
+
+
+Task2.py
+ - longest_caller(calls) = O(n)
+Iteration over a list causes the complexity of this function to increase by n.
+
+Task3.py
+ - bangalore_codes_called(calls) = O(nlogn)
+Using the built in sorted() function uses a hybrid algorithm called Timsort. Timsort uses two other algorithms, merge sort and insertion sort, causing the max number of potential operations to be (nlogn) in the worst case. For this small application using this algorithm will not adversely affect the run time enough for it to cause any runtime issues.
+
+ - fixed_bangalorian_calls(calls) = O(n)
+Iteration over a list causes the complexity of this function to increase by n.
+
+Task4.py
+ - potential_telemarketers(texts, calls) = O(nlogn)
+The sorted() function uses timsort causing the run time to be O(nlogn).
+
